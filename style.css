@@ -1,0 +1,110 @@
+:root { 
+    --background-color: #F5F2E0;
+    --font-family Georgia, Cambria, 'Times New Roman', serif;
+    --text-color: #363535;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* Make default font-size 1rem and add smooth scrolling to anchors */
+html {
+  font-size: 1rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.8;
+
+    max-width: 80ch;
+    min-height: 90vh;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 2rem 1.25rem;
+
+    text-rendering: optimizeLegibility;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 2px solid var(--text-color);
+}
+
+
+thead th:not(:first-child) {
+    border-bottom: 2px solid var(--text-color);
+    border-left: 2px solid var(--text-color);
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+}
+
+th {
+    padding: 0.1rem;
+}
+
+tbody tr{
+    border-top: 1px dotted var(--text-color);
+}
+
+tr:first-child {
+    border-top: 2px solid var(--text-color);
+}
+
+tfoot tr {
+    font-weight: bold;
+    border-top: 2px solid var(--text-color);
+}
+
+
+td:first-child {
+    border-right: 1px solid #000; 
+}
+
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: var(--text-color);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  margin: 1.2em;
+}
+
+hr::after {
+  background: #fff;
+  content: '\26F0';
+  padding: 0 10px;
+  position: relative;
+  top: -13px;
+  background-color: var(--background-color);
+}
+
+.title {
+    text-align: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_cont {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
